@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale1.0">
+<style>
+* { 
+	box-sizing: border-box;
+}
+
+body { 
+	background-color: #eff1f3; 
+	margin: 0;
+}
+
+.navbar { 
+	position: fixed; 
+	float: left; 
+	margin: 25px;
+	margin-right: 0px;
+	padding-right: 0px;
+	background-color: #FDFDFD;
+}
+
+nav a { 
+	text-decoration: none; 
+	color: #bb7e5d
+}
+
+nav ul { 
+	list-style-type: none; 
+	padding: 7em;
+}
+
+nav img { 
+	padding-left: 1.5em;
+}
+
+nav li { 
+	font-family: Century Gothic; 
+	font-size: 20pt; 
+	padding-bottom: 2em;
+	color: #223843;
+}
+
+main { 
+	float: right;
+	margin-left: 27em;
+}
+/*.row { 
+	display: -ms-flexbox; 
+	display: flex;
+	-ms-flex-wrap: wrap; 
+	flex-wrap: wrap;
+	padding: 8px 4px;
+}
+
+.column { 
+	-ms-flex: 25%; 
+	flex: 25%;
+	max-width: 25%;
+	padding: 8px 7px;
+}
+
+.column img { 
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}*/
+
+.masonry-with-columns {
+  	columns: 4 200px;
+  	column-gap: 1rem; 
+  	margin-top: 25px;
+  	margin-right: 25px;
+ }
+.masonry-with-columns img {
+    width: 150px;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    width: 100%; 
+}
+
+.container { 
+	display: column;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15em;
+	padding-bottom: 15em;
+}
+
+.image { 
+	flex-basis: 40%;
+	float: right; 
+	padding-right: 15em;
+			
+}
+
+.text { 
+	padding-left: 5em;
+	font-family: Century Gothic; 
+	font-size: 15pt; 
+	line-height: 25pt;
+	color: #223843;
+}
+
+#socialmedia { 
+	padding-left: 3.5em;
+}
+
+@media only screen and (max-width: 1024px) {
+	nav ul { 
+		padding: 3em ;
+		text-align: center; 
+	}
+	
+	nav li {
+		font-size: 16pt;
+		padding-bottom: 1em;
+	}
+	.navbar { 
+		margin: 25px;
+	}  
+	
+	main {
+		margin-left: 22em;
+	}
+	
+	.centerimg { 
+		margin: 0 auto;
+		display: block;
+		padding: 20px; 
+		width: 250px;
+	}
+
+	nav ul { 
+		margin-top: 0;
+		margin-bottom: 1.5em; 
+	}
+
+	#socialmedia { 
+		padding-left: 0;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	} 
+
+	.mobilesize { 
+		width: 200px;
+	}
+	.image { 
+		padding-right: 10px;
+		float: right; 
+	}
+
+	.text { 
+		padding-left: 0;
+		font-size: 13pt; 
+		line-height: 15pt;
+	}
+	.container { 
+		padding-left: 10px;
+		padding-top: 50px;
+	}
+	h1 { 
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.masonry-with-columns {
+	  	columns: 3 5px;
+	  	column-gap: 5px; 
+	  	margin-top: 5px;
+	  	margin-right: 2px;
+	  	width: 100%;
+	  	padding: 20px;
+	}
+	.masonry-with-columns img {
+	    width: 150px;
+	    margin: 0 2px 2px 0;
+	    display: inline-block;
+	    width: 100%; 
+}
+
+	main {
+		margin-left: 17em;
+	}
+	
+
+
+
+@media only screen and (max-width: 414px) {
+	nav ul { 
+		padding: 0.5em ;
+		text-align: center; 
+	}
+	.navbar { 
+		position: relative;
+		margin: 0;
+		width: 100%; 
+	}  
+	.centerimg { 
+		margin: 0 auto;
+		display: block;
+		padding: 0; 
+	} 
+	#socialmedia { 
+		padding-left: 0;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	} 
+	nav img { 
+		padding: 10px; 
+	}
+	nav ul { 
+		margin-top: 0;
+		margin-bottom: 1.5em; 
+	}
+	nav li { 
+		padding-bottom: 1em; 
+	}
+	
+	
+	main { 
+		margin: 0; 
+		float: none;
+	}
+	
+	.mobilesize { 
+		width: 125px;
+	}
+	.image { 
+		padding-right: 10px;
+		float: right; 
+	}
+
+	.text { 
+		padding-left: 0;
+		font-size: 10pt; 
+		line-height: 15pt;
+	}
+	.container { 
+		padding-left: 10px;
+		padding-top: 50px;
+	}
+	h1 { 
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.masonry-with-columns {
+	  	columns: 2 5px;
+	  	column-gap: 5px; 
+	  	margin-top: 5px;
+	  	margin-right: 5px;
+	  	width: 100%;
+	  	
+ 	}
+ 	
+	
+}
+
+
+</style>
+	
+</head>
+
+<body>
+	
+	
+	<div class="navbar">
+		<nav>
+			
+			<img class="centerimg" src="nav/logo.svg" height="200" width="300" alt="Mara Design Logo">
+			
+			<ul>
+				<li><a href="#Portfolio">Portfolio</li> 
+				<li><a href="#About">About</a></li> 
+				<li><a href="#Contact">Contact</a></li> 
+			</ul>
+			
+			<div id="socialmedia">
+				<a target="_blank" href="https://www.behance.net/mariabanlaki?fbclid=IwAR0d3SDtv_SFe6OKC4sosOUH5tVziU1iIZr1ufhe-akusPAs1RbRRxfclpo"><img src="nav/behance.svg" height="45" width="45">
+				<a target="_blank" href="https://www.instagram.com/maresz18/"><img src="nav/instagram.svg" height="45" width="45"></a> 
+				<a target="_blank" href="https://www.linkedin.com/in/maria-banlaki-978a92158/?originalSubdomain=be"><img src="nav/linkedin.svg" height="45" width="45"></a> 
+				<a target="_blank" href="https://twitter.com/mariabanlaki"><img src="nav/twitter.svg" height="45" width="45"></a>
+			</div>
+			
+		</nav>
+	</div>
+	
+	<main>
+			
+			<div class="masonry-with-columns" id="Portfolio">
+			
+				<img src="portfolio/01.jpg" style="100%">
+				<img src="portfolio/02.jpg" style="100%">
+				<img src="portfolio/08.jpg" style="100%">
+				<img src="portfolio/05.jpg" style="100%">
+				<img src="portfolio/04.jpg" style="100%">
+				<img src="portfolio/06.jpg" style="100%">
+				<img src="portfolio/03.jpg" style="100%">
+				<img src="portfolio/07.jpg" style="100%">
+				<img src="portfolio/09.png" style="100%">
+				<img src="portfolio/10.png" style="100%">
+				<img src="portfolio/11.png" style="100%">
+				<img src="portfolio/12.png" style="100%">
+				<img src="portfolio/13.png" style="100%">
+				<img src="portfolio/14.jpg" style="100%">
+				<img src="portfolio/15.jpg" style="100%">
+			
+			</div>
+			
+		
+		<div class="container">
+			<div class="image">
+				<img class="mobilesize" src="about/Image.jpg" alt="Picture of me">
+			</div>
+			<div class="text">
+		<h1 style="color: #223843" id="About">Hi there,</h1>
+			<p style="color: #223843">I am a freelance Graphic Designer. I work on multiple projects at <br>
+			the same time with a special focus on social media 2D animations <br>
+			and online branding. Recently I started to learn digital drawing. <br>
+			I am eager to learn as much as possible and my ultimate goal is <br>
+			to become an outstanding motion designer. I was a professional <br>
+			volleyball player in Hungary before I joined the team at <a style="color: #bb7e5d;" target="_blank" href="https://znconsulting.com/?fbclid=IwAR2xwZX8N89DITj6x7wox2dvEhD0E1RGcnHJK0UfIoWzIJJOu67JQ0fe67Q">ZN Consulting</a> <br>
+			and I still enjoy teaching and playing volleyball outside work. I studied <br>
+			web and graphic design in Budapest, Hungary. I love the beach and <br>
+			doing sports in my free time.</p>
+			<a href="mailto:maria.banlaki@gmail.com"><img src="about/email.svg" height="100" width="150" alt="Email Me"></a>
+		</div>
+		</div>
+		
+		
+
+	</main>
+	
+	<footer>
+		
+	</footer>
+
+</body>
+
+</html>
