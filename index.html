@@ -33,9 +33,6 @@ nav ul {
 	padding: 7em;
 }
 
-nav img { 
-	padding-left: 1.5em;
-}
 
 nav li { 
 	font-family: Century Gothic; 
@@ -44,6 +41,14 @@ nav li {
 	color: #223843;
 }
 
+nav li a {
+	padding: 4px;
+}
+
+.centerimg { 
+		margin: 0 auto;
+		display: block;
+}
 main { 
 	float: right;
 	margin-left: 27em;
@@ -86,8 +91,19 @@ main {
 }
 
 #socialmedia { 
-	padding-left: 3.5em;
+	display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2em;
 }
+
+nav li a:hover {
+	background-color: #bb7e5d;
+	border-radius: 100px;
+	color: #FDFDFD;
+}
+
 
 
 @media only screen and (max-width: 1024px) {
@@ -104,9 +120,7 @@ main {
 		margin: 25px;
 		height: 100%;
 	} 
-	nav img { 
-		padding: 8px;
-	} 
+
 	
 	main {
 		margin-left: 19em;
@@ -125,11 +139,10 @@ main {
 	}
 
 	#socialmedia { 
-		padding: 0 0 50px 0;
-		margin: 0 30px 0 30px;
-		display: flex;
-		justify-content: center;
-		border-bottom: 1px solid #223843;
+		border-bottom:  1px solid #223843;
+		width: 180px;
+		padding-bottom: 2em;
+		/*border-bottom: 1px solid #223843;*/
 
 	} 
 
@@ -167,6 +180,7 @@ main {
 	  	width: 100%;
 	  	padding: 20px;
 	}
+
 	.masonry-with-columns img {
 	    width: 150px;
 	    margin: 0 2px 2px 0;
@@ -191,6 +205,7 @@ main {
 		position: relative;
 		margin: 0;
 		width: 100%; 
+		border-bottom:  1px solid #223843;
 	}  
 	.centerimg { 
 		margin: 0 auto;
@@ -200,12 +215,10 @@ main {
 	#socialmedia { 
 		padding-left: 0;
 		margin: 0 auto;
-		display: flex;
-		justify-content: center;
+		border-bottom: none;
+		
 	} 
-	nav img { 
-		padding: 10px; 
-	}
+	
 	nav ul { 
 		margin-top: 0;
 		margin-bottom: 1.5em; 
@@ -273,10 +286,10 @@ main {
 			</ul>
 			
 			<div id="socialmedia">
-				<a target="_blank" href="https://www.behance.net/mariabanlaki?fbclid=IwAR0d3SDtv_SFe6OKC4sosOUH5tVziU1iIZr1ufhe-akusPAs1RbRRxfclpo"><img src="nav/behance.svg" height="45" width="45">
-				<a target="_blank" href="https://www.instagram.com/maresz18/"><img src="nav/instagram.svg" height="45" width="45"></a> 
-				<a target="_blank" href="https://www.linkedin.com/in/maria-banlaki-978a92158/?originalSubdomain=be"><img src="nav/linkedin.svg" height="45" width="45"></a> 
-				<a target="_blank" href="https://twitter.com/mariabanlaki"><img src="nav/twitter.svg" height="45" width="45"></a>
+				<a target="_blank" href="https://www.behance.net/mariabanlaki?fbclid=IwAR0d3SDtv_SFe6OKC4sosOUH5tVziU1iIZr1ufhe-akusPAs1RbRRxfclpo"><img src="nav/behance.svg" height="25" width="25">
+				<a target="_blank" href="https://www.instagram.com/maresz18/"><img src="nav/instagram.svg" height="25" width="25"></a> 
+				<a target="_blank" href="https://www.linkedin.com/in/maria-banlaki-978a92158/?originalSubdomain=be"><img src="nav/linkedin.svg" height="25" width="25"></a> 
+				<a target="_blank" href="https://twitter.com/mariabanlaki"><img src="nav/twitter.svg" height="25" width="25"></a>
 			</div>
 			
 		</nav>
@@ -307,17 +320,17 @@ main {
 		
 		<div class="container">
 			<div class="text">
-		<h1 style="color: #223843" id="About">Hi there,</h1>
-			<p style="color: #223843">I am a freelance Graphic Designer. I work on multiple projects at 
-			the same time with a special focus on social media 2D animations 
-			and online branding. Recently I started to learn digital drawing. 
-			I am eager to learn as much as possible and my ultimate goal is 
-			to become an outstanding motion designer. I was a professional 
-			volleyball player in Hungary before I joined the team at <a style="color: #bb7e5d;" target="_blank" href="https://znconsulting.com/?fbclid=IwAR2xwZX8N89DITj6x7wox2dvEhD0E1RGcnHJK0UfIoWzIJJOu67JQ0fe67Q">ZN Consulting</a> 
-			and I still enjoy teaching and playing volleyball outside work. I studied 
-			web and graphic design in Budapest, Hungary. I love the beach and 
-			doing sports in my free time.</p>
-			<a href="mailto:maria.banlaki@gmail.com"><img src="about/email.svg" height="100" width="150" alt="Email Me"></a>
+				<h1 style="color: #223843" id="About">Hi there,</h1>
+				<p style="color: #223843">I am a freelance Graphic Designer. I work on multiple projects at 
+				the same time with a special focus on social media 2D animations 
+				and online branding. Recently I started to learn digital drawing. 
+				I am eager to learn as much as possible and my ultimate goal is 
+				to become an outstanding motion designer. I was a professional 
+				volleyball player in Hungary before I joined the team at <a style="color: #bb7e5d;" target="_blank" href="https://znconsulting.com/?fbclid=IwAR2xwZX8N89DITj6x7wox2dvEhD0E1RGcnHJK0UfIoWzIJJOu67JQ0fe67Q">ZN Consulting</a> 
+				and I still enjoy teaching and playing volleyball outside work. I studied 
+				web and graphic design in Budapest, Hungary. I love the beach and 
+				doing sports in my free time.</p>
+				<a href="mailto:maria.banlaki@gmail.com"><img src="about/email.svg" height="100" width="150" alt="Email Me"></a>
 		</div>
 		<div class="image">
 				<img class="mobilesize" src="about/Image.jpg" alt="Picture of me">
