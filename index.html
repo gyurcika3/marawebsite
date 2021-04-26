@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title></title>
+	<title>Mara Design</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * { 
 	box-sizing: border-box;
@@ -24,6 +24,7 @@ body {
 	height: 94.5%;
 }
 
+
 nav a { 
 	text-decoration: none; 
 	color: #bb7e5d
@@ -32,6 +33,7 @@ nav a {
 nav ul { 
 	list-style-type: none; 
 	padding: 7em;
+	margin-top: 4em;
 }
 
 
@@ -98,7 +100,8 @@ main {
     justify-content: space-around;
     width: 60%;
     margin: 0 auto;
-    padding-bottom: 2em;
+    padding-top: 4em;
+    padding-bottom: 10px;
 }
 
 nav li a:hover {
@@ -110,8 +113,33 @@ nav li a:hover {
     content:" *";
     color: red;
  }
-		
+ .input { 
+ 	width: 250px; 
+ 	height: 40px;
+ }
+ .textarea { 
+ 	resize: none; 
+ 	width: 515px; 
+ 	height: 200px;
 
+ }
+.formpadding { 
+	padding: 15px; 
+	}	
+.formwidth { 
+	max-width: 550px; 
+	margin-left: 100px;
+	margin-bottom: 200px; }
+
+input[type=submit] {
+    border-radius: 30px;
+    border: 0;
+    padding: 10px;
+    color: #fff;
+    font-family: Tahoma;
+    background: #bb7e5d;
+	}
+    
 		
 
 
@@ -178,6 +206,8 @@ nav li a:hover {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+	.formwidth { 
+	margin: 0 auto;
 
 }
 
@@ -204,6 +234,26 @@ nav li a:hover {
 	main {
 		margin-left: 17em;
 	}
+	.navbar {
+		height: 95%;
+	}
+	.formwidth { 
+		
+		margin: 0;
+	}
+	.input { 
+	 	width: 150px; 
+	 	height: 40px;
+ }
+ 	.textarea { 
+	 	resize: none; 
+	 	width: 315px; 
+	 	height: 200px; 
+}
+	.formpadding {
+		margin-left: 75px;
+	}
+
 }	
 
 @media only screen and (max-width: 414px) {
@@ -272,11 +322,18 @@ nav li a:hover {
 	  	width: 100%;
 	  	
  	}
+ 	.formpadding {
+		margin-left: 35px;
+	}
  	
 	
 }
-
-
+@media only screen and (max-width: 375px) {
+	.formpadding {
+		margin-left: 15px;
+	}
+}
+}
 </style>
 	
 </head>
@@ -296,10 +353,10 @@ nav li a:hover {
 			</ul>
 			
 			<div id="socialmedia">
-				<a target="_blank" href="https://www.behance.net/mariabanlaki?fbclid=IwAR0d3SDtv_SFe6OKC4sosOUH5tVziU1iIZr1ufhe-akusPAs1RbRRxfclpo"><img src="nav/behance.svg" height="25" width="25"></a>
-				<a target="_blank" href="https://www.instagram.com/maresz18/"><img src="nav/instagram.svg" height="25" width="25"></a> 
-				<a target="_blank" href="https://www.linkedin.com/in/maria-banlaki-978a92158/?originalSubdomain=be"><img src="nav/linkedin.svg" height="25" width="25"></a> 
-				<a target="_blank" href="https://twitter.com/mariabanlaki"><img src="nav/twitter.svg" height="25" width="25"></a>
+				<a target="_blank" href="https://www.behance.net/mariabanlaki?fbclid=IwAR0d3SDtv_SFe6OKC4sosOUH5tVziU1iIZr1ufhe-akusPAs1RbRRxfclpo"><img src="nav/behance.svg" height="25" width="25" alt="Behance Logo"></a>
+				<a target="_blank" href="https://www.instagram.com/maresz18/"><img src="nav/instagram.svg" height="25" width="25" alt="Instagram Logo"></a> 
+				<a target="_blank" href="https://www.linkedin.com/in/maria-banlaki-978a92158/?originalSubdomain=be"><img src="nav/linkedin.svg" height="25" width="25" alt="LinkedIn Logo"></a> 
+				<a target="_blank" href="https://twitter.com/mariabanlaki"><img src="nav/twitter.svg" height="25" width="25" alt="Twitter Logo"></a>
 			</div>
 			
 		</nav>
@@ -309,21 +366,21 @@ nav li a:hover {
 			
 		<div class="masonry-with-columns" id="Portfolio">
 			
-			<img src="portfolio/01.jpg" style="100%">
-			<img src="portfolio/02.jpg" style="100%">
-			<img src="portfolio/08.jpg" style="100%">
-			<img src="portfolio/05.jpg" style="100%">
-			<img src="portfolio/04.jpg" style="100%">
-			<img src="portfolio/06.jpg" style="100%">
-			<img src="portfolio/03.jpg" style="100%">
-			<img src="portfolio/07.jpg" style="100%">
-			<img src="portfolio/09.png" style="100%">
-			<img src="portfolio/10.png" style="100%">
-			<img src="portfolio/11.png" style="100%">
-			<img src="portfolio/12.png" style="100%">
-			<img src="portfolio/13.png" style="100%">
-			<img src="portfolio/14.jpg" style="100%">
-			<img src="portfolio/15.jpg" style="100%">
+			<img src="portfolio/01.jpg" style="100%" alt="Photo1">
+			<img src="portfolio/02.jpg" style="100%" alt="Photo2">
+			<img src="portfolio/08.jpg" style="100%" alt="Photo3">
+			<img src="portfolio/05.jpg" style="100%" alt="Photo4">
+			<img src="portfolio/04.jpg" style="100%" alt="Photo5">
+			<img src="portfolio/06.jpg" style="100%" alt="Photo6">
+			<img src="portfolio/03.jpg" style="100%" alt="Photo7">
+			<img src="portfolio/07.jpg" style="100%" alt="Photo8">
+			<img src="portfolio/09.png" style="100%" alt="Photo9">
+			<img src="portfolio/10.png" style="100%" alt="Photo10">
+			<img src="portfolio/11.png" style="100%" alt="Photo11">
+			<img src="portfolio/12.png" style="100%" alt="Photo12">
+			<img src="portfolio/13.png" style="100%" alt="Photo13">
+			<img src="portfolio/14.jpg" style="100%" alt="Photo14">
+			<img src="portfolio/15.jpg" style="100%" alt="Photo15">
 			
 		</div>
 			
@@ -347,27 +404,28 @@ nav li a:hover {
 			</div>
 		</div>
 
-		<div style="max-width: 550px; margin-left: 100px;">
-			<h1 style="text-align: center;">Let's get in touch</h1>
+		<div class="formwidth" id="Contact">
+			<h1 style="text-align: center; color: #223843; font-family: Century Gothic; 
+						font-size: 22pt;">Let's get in touch</h1>
 				
 					
 					<form method="post">
-						<div style=" float: left; padding-right: 50px;">
-							<label class="required" for="yname"></label><br>
-							<input style=" width: 250px; height: 40px;" type="text" name="yname" id="yname" placeholder="Your Name" required><br>
+						<div class="formpadding" style=" float: left;">
+							<label class="required"></label><br>
+							<input class="input" type="text" name="yname" id="yname" placeholder="Your Name" required><br>
 						</div>
 
-						<div>
-							<label class="required" for="yemail"></label><br>
-							<input style=" width: 250px; height: 40px;" type="text" name="yemail" id="yemail" placeholder="Your Email" required><br>
+						<div class="formpadding">
+							<label class="required"></label><br>
+							<input class="input" type="text" name="yemail" id="yemail" placeholder="Your Email" required><br>
 						</div>
 
-						<div style="padding-top: 2em;">
-							<label class="required" for="ymessage"></label><br> 
-							<textarea style="resize: none; width: 550px; height: 200px;" name="message" id="message" rows="4" cols="40" placeholder="Your Message" required></textarea>
+						<div class="formpadding">
+							<label class="required"></label><br> 
+							<textarea class="textarea" name="message" id="message" rows="4" cols="40" placeholder="Your Message" required></textarea>
 						</div>
 
-						<div style=" padding-top: 1em;" >
+						<div class="formpadding">
 							<input type="submit" value="SEND YOUR MESSAGE">
 						</div>
 					</form>
