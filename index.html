@@ -105,6 +105,13 @@ nav li a:hover {
 	border-radius: 100px;
 	color: #FDFDFD;
 }
+.required:after {
+    content:" *";
+    color: red;
+ }
+		
+
+		
 
 
 
@@ -299,25 +306,25 @@ nav li a:hover {
 	
 	<main>
 			
-			<div class="masonry-with-columns" id="Portfolio">
+		<div class="masonry-with-columns" id="Portfolio">
 			
-				<img src="portfolio/01.jpg" style="100%">
-				<img src="portfolio/02.jpg" style="100%">
-				<img src="portfolio/08.jpg" style="100%">
-				<img src="portfolio/05.jpg" style="100%">
-				<img src="portfolio/04.jpg" style="100%">
-				<img src="portfolio/06.jpg" style="100%">
-				<img src="portfolio/03.jpg" style="100%">
-				<img src="portfolio/07.jpg" style="100%">
-				<img src="portfolio/09.png" style="100%">
-				<img src="portfolio/10.png" style="100%">
-				<img src="portfolio/11.png" style="100%">
-				<img src="portfolio/12.png" style="100%">
-				<img src="portfolio/13.png" style="100%">
-				<img src="portfolio/14.jpg" style="100%">
-				<img src="portfolio/15.jpg" style="100%">
+			<img src="portfolio/01.jpg" style="100%">
+			<img src="portfolio/02.jpg" style="100%">
+			<img src="portfolio/08.jpg" style="100%">
+			<img src="portfolio/05.jpg" style="100%">
+			<img src="portfolio/04.jpg" style="100%">
+			<img src="portfolio/06.jpg" style="100%">
+			<img src="portfolio/03.jpg" style="100%">
+			<img src="portfolio/07.jpg" style="100%">
+			<img src="portfolio/09.png" style="100%">
+			<img src="portfolio/10.png" style="100%">
+			<img src="portfolio/11.png" style="100%">
+			<img src="portfolio/12.png" style="100%">
+			<img src="portfolio/13.png" style="100%">
+			<img src="portfolio/14.jpg" style="100%">
+			<img src="portfolio/15.jpg" style="100%">
 			
-			</div>
+		</div>
 			
 		
 		<div class="container">
@@ -338,8 +345,36 @@ nav li a:hover {
 				<img class="mobilesize" src="about/Image.jpg" alt="Picture of me">
 			</div>
 		</div>
-		
-		
+
+		<div style="max-width: 550px; margin-left: 100px;">
+			<h1 style="text-align: center;">Let's get in touch</h1>
+				
+					
+					<form method="post">
+						<div style=" float: left; padding-right: 50px;">
+							<label class="required" for="yname">Your Name</label><br>
+							<input style=" width: 250px;" type="text" name="yname" id="yname" required><br>
+						</div>
+
+						<div>
+							<label class="required" for="yemail">Your Email</label><br>
+							<input style=" width: 250px;" type="text" name="yemail" id="yemail" required><br>
+						</div>
+
+						<div style="padding-top: 2em;">
+							<label class="required" for="ymessage">Your Message</label><br> 
+							<textarea style="resize: none; width: 550px; height: 200px;" name="message" id="message" rows="4" cols="40" required></textarea>
+						</div>
+
+						<div style=" padding-top: 1em;" >
+							<input type="submit" value="SEND YOUR MESSAGE">
+						</div>
+					</form>
+		</div>
+					
+				
+
+
 
 	</main>
 	
