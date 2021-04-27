@@ -123,11 +123,16 @@ nav li a:hover {
 	border-radius: 100px;
 	color: #FDFDFD;
 }
+main a.textlink:hover {
+	color: #223843;
+	text-decoration: underline;
+}
 main a.buttons:hover {
 	background-color: #223843;
 	border-radius: 100px;
 	color: #eff1f3;
 }
+
 input:hover[type="submit"] {
 	background-color: #223843;
 	border-radius: 100px;
@@ -165,8 +170,13 @@ input[type=submit] {
 	text-align: center;
 	text-decoration: none; 
 	border: none;
-	border-color: #bb7e5d;
-	border-radius: 100px;
+	border-radius: 30px;
+	
+}
+.textlink {
+	color: #bb7e5d;
+	font-style: italic;
+	text-decoration: none;
 }
     
 		
@@ -445,7 +455,7 @@ input[type=submit] {
 				and online branding. Recently I started to learn digital drawing. 
 				I am eager to learn as much as possible and my ultimate goal is 
 				to become an outstanding motion designer. I was a professional 
-				volleyball player in Hungary before I joined the team at <a style="color: #bb7e5d;" target="_blank" href="https://znconsulting.com/?fbclid=IwAR2xwZX8N89DITj6x7wox2dvEhD0E1RGcnHJK0UfIoWzIJJOu67JQ0fe67Q">ZN Consulting</a> 
+				volleyball player in Hungary before I joined the team at <a class="textlink" target="_blank" href="https://znconsulting.com/?fbclid=IwAR2xwZX8N89DITj6x7wox2dvEhD0E1RGcnHJK0UfIoWzIJJOu67JQ0fe67Q">ZN Consulting</a> 
 				and I still enjoy teaching and playing volleyball outside work. I studied 
 				web and graphic design in Budapest, Hungary. I love the beach and 
 				doing sports in my free time.</p>
@@ -461,7 +471,7 @@ input[type=submit] {
 						font-size: 22pt;">Let's get in touch</h1>
 				
 					
-					<form method="post">
+					<form name="ContactForm" method="post" id="ContactForm" action="processData.php">
 						<div class="formpadding" style=" float: left;">
 							<label class="required"></label><br>
 							<input class="input" type="text" name="yname" id="yname" placeholder="Your Name" required><br>
